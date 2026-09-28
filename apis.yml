@@ -1,23 +1,66 @@
 aid: bindingsolutionslimited
+
 name: Bindingsolutionslimited
-description: 'Bindingsolutionslimited is a company surfaced via the API Evangelist harvest backlog (source:
-  secondary-market) and added to the network as a stub for full-pipeline profiling.'
+
+image: https://www.bindingsolutions.uk/wp-content/uploads/2024/08/home-about-us-featured.jpg
+
+description: 'Binding Solutions Ltd is a fast‑growing technology company focused on decarbonising steel production. It develops green steel technologies, operates a first‑of‑a‑kind plant, and offers process and steel solutions to enable large‑scale low‑carbon steel manufacturing.'
+
 url: https://raw.githubusercontent.com/api-evangelist/bindingsolutionslimited/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-28 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-28'
+
 modified: '2026-09-28'
+
 tags:
-- Company
-apis: []
+- Green Steel
+- Technology
+- Manufacturing
+- Sustainability
+- UK
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/bindingsolutionslimited-hosts.yml
+- type: PrivacyPolicy
+  url: https://www.bindingsolutions.uk/privacy-policy/
+- type: Newsroom
+  url: https://www.bindingsolutions.uk/media/
+- type: Leadership
+  url: https://www.bindingsolutions.uk/team/
+- type: DomainSecurity
+  url: security/bindingsolutionslimited-domain-security.yml
 - type: Website
-  url: https://equityzen.com/company/bindingsolutionslimited
+  url: https://www.bindingsolutions.uk
+
+apis: []
+
+x-coverage:
+  state: unreadable
+  reason: no-machine-readable-spec
+  detail: OpenAPI spec not found at known endpoints on api.bindingsolutions.uk
+  evidence:
+    - url: https://api.bindingsolutions.uk/openapi.json
+      status: 404
+  checked: '2026-09-28'
+x-enrichment:
+  date: '2026-09-28'
+  status: enriched
+  artifacts_added: 4
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
